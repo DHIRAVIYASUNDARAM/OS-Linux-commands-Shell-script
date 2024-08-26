@@ -438,6 +438,7 @@ echo '#!/bin/sh' > my-script.sh
 echo 'echo Hello World‘; exit 0 >> my-script.sh
 ```
 chmod 755 my-script.sh
+
 ./my-script.sh
 ## OUTPUT
  ![Screenshot 2024-08-26 165407](https://github.com/user-attachments/assets/f4d1b5fe-2c2c-48e2-b407-4f0ec4dfa6be)
@@ -827,7 +828,9 @@ echo "Visit beautiful $file“
 done
 ```
 $ chmod 777 forinfile.sh
+
 $ cat cities
+```
 Hyderabad
 Alampur
 Basara
@@ -835,6 +838,7 @@ Warangal
 Adilabad
 Bhadrachalam
 Khammam
+```
 
 ## OUTPUT
 ![Screenshot 2024-08-26 171740](https://github.com/user-attachments/assets/e22eabab-94b5-47cb-86d0-e8887ec00a04)
@@ -850,6 +854,7 @@ echo "The value of i is $i"
 done
 ````
 $ chmod 755 forctype.sh
+
 $ ./forctype.sh 
 ## OUTPUT
 ![Screenshot 2024-08-26 171850](https://github.com/user-attachments/assets/c9f26f2d-0c64-4099-93df-907a613d8a92)
@@ -864,6 +869,7 @@ echo "$a - $b"
 done
 ```
 $ chmod 755 forctype.sh
+
 $ ./forctype1.sh 
 ## OUTPUT
 ![Screenshot 2024-08-26 171903](https://github.com/user-attachments/assets/020fdc89-b84e-4548-910a-f113eec8fcdf)
@@ -942,11 +948,13 @@ echo "Usage: badtest1 a b"
 fi
 ```
 ## OUTPUT
- ./funcex.sh 
+ $./funcex.sh 
+ ## OUTPUT
 ![Screenshot 2024-08-26 172951](https://github.com/user-attachments/assets/338963c7-2f22-40cd-8c09-34e9475d99bc)
 
  
- ./funcex.sh 1 2
+ $./funcex.sh 1 2
+ ## OUTPUT
 ![Screenshot 2024-08-26 172958](https://github.com/user-attachments/assets/335a5e12-8b42-45a6-b6d1-7974430f600b)
 
  
@@ -959,8 +967,9 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
+
 $ ./argshift.sh 1 2 3
-## OUUTPUT
+## OUTPUT
 ![Screenshot 2024-08-26 173024](https://github.com/user-attachments/assets/9ee4052d-96fa-46f0-bfcc-6f94742d5e77)
 
  cat argshift1.sh
@@ -977,10 +986,11 @@ for (( i=0;i<$ELEMENTS;i++)); do
 done
 ```
 $ chmod 777 argshift.sh
+
 $ ./argshift1.sh 1 2 3
  
 ## OUTPUT
-![Screenshot 2024-08-26 173438](https://github.com/user-attachments/assets/739a89cd-1dde-4a7a-9be2-3b840e90d196)
+![Screenshot 2024-08-26 175636](https://github.com/user-attachments/assets/34b9a0fe-51f5-4159-80d8-77b5a55e2c51)
  
  
 cat > nc.awk
