@@ -1,3 +1,5 @@
+# Name: DHIRAVIYA S
+# Register No:212223040041
 # OS-Linux-commands-Shell-scripting
 Operating systems Lab exercise
 # Linux commands-Shell scripting
