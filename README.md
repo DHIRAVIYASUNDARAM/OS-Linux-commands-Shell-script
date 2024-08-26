@@ -121,7 +121,7 @@ grep hello newfile
 
 grep -v hello newfile 
 ## OUTPUT
-![Screenshot 2024-08-26 135826](https://github.com/user-attachments/assets/2979b2f7-076a-4a85-9738-f714d68c713d)
+![Screenshot 2024-08-26 173855](https://github.com/user-attachments/assets/85cf2cb5-c285-4f68-a537-21a60b1e591b)
 
 
 
@@ -203,7 +203,7 @@ egrep '(World$)' newfile
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-![Screenshot 2024-08-26 140225](https://github.com/user-attachments/assets/08692eed-6222-4e0e-b847-0b903fb44557)
+![Screenshot 2024-08-26 174022](https://github.com/user-attachments/assets/4f9a5b54-0321-4fd7-bdf2-1c9b9da4ca37)
 
 
 
@@ -225,11 +225,13 @@ egrep 'Linux.*World' newfile
 
 egrep l{2} newfile
 ## OUTPUT
+![Screenshot 2024-08-26 174132](https://github.com/user-attachments/assets/57598cd9-b500-41fb-acb6-78200c9783d5)
 
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
+![Screenshot 2024-08-26 174143](https://github.com/user-attachments/assets/eb4d1556-5b98-4bbe-85c2-209ea644d616)
 
 
 cat > file23
