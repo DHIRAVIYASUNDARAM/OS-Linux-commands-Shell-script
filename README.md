@@ -425,11 +425,9 @@ tar -xvf backup.tar
 
 gzip backup.tar
 
-ls .gz
-## OUTPUT
- 
 gunzip backup.tar.gz
 ## OUTPUT
+![Screenshot 2024-08-26 164129](https://github.com/user-attachments/assets/e2d00965-7012-49d2-ab0a-f81480df3568)
 
  
 # Shell Script
@@ -440,8 +438,8 @@ echo 'echo Hello World‘; exit 0 >> my-script.sh
 chmod 755 my-script.sh
 ./my-script.sh
 ## OUTPUT
+ ![Screenshot 2024-08-26 165407](https://github.com/user-attachments/assets/f4d1b5fe-2c2c-48e2-b407-4f0ec4dfa6be)
 
- 
 cat << stop > herecheck.txt
 ```
 hello in this world
@@ -452,6 +450,7 @@ stop
 
 cat herecheck.txt
 ## OUTPUT
+![Screenshot 2024-08-26 165602](https://github.com/user-attachments/assets/ecd49b65-eb13-43b7-8559-1c961377cc57)
 
 
 cat < scriptest.sh 
@@ -490,26 +489,19 @@ chmod 777 scriptest.sh
 ./scriptest.sh 1 2 3
 
 ## OUTPUT
+![Screenshot 2024-08-26 165917](https://github.com/user-attachments/assets/ad12eb83-dffa-40db-ba0a-86015487a9d3)
 
  
 ls file1
 ## OUTPUT
-
-echo $?
-## OUTPUT 
-./one
-bash: ./one: Permission denied
- 
-echo $?
-## OUTPUT 
- 
-abcd
- 
-echo $?
- ## OUTPUT
+![Screenshot 2024-08-26 170053](https://github.com/user-attachments/assets/2a58c8d5-859d-49d7-8ffb-12692e77ef4c)
 
 
- 
+echo $?
+## OUTPUT
+![Screenshot 2024-08-26 164528](https://github.com/user-attachments/assets/01042460-9206-4d1f-bf6e-399258bd704b)
+
+
 # mis-using string comparisons
 
 cat < strcomp.sh 
@@ -538,14 +530,12 @@ else
 echo "$val1 is less than $val2"
 fi
 ```
-##OUTPUT
-
-
 
 chmod 755 strcomp.sh
  
 ./strcomp.sh 
 ## OUTPUT
+![Screenshot 2024-08-26 170224](https://github.com/user-attachments/assets/ba1c937d-ce20-4788-96bd-214dc61c16d2)
 
 
 # check file ownership
@@ -573,6 +563,7 @@ fi
  ```
 ./psswdperm.sh
 ## OUTPUT
+![Screenshot 2024-08-26 170249](https://github.com/user-attachments/assets/7a8b3756-9878-400c-bc9f-46cd3ec5fdb5)
 
 # check if with file location
 cat>ifnested.sh 
@@ -619,6 +610,7 @@ fi
 
 ./ifnested.sh 
 ## OUTPUT
+![Screenshot 2024-08-26 170339](https://github.com/user-attachments/assets/685e6136-5436-480b-b921-9c6f2170133d)
 
 
 
@@ -660,58 +652,10 @@ fi
 ```
 
 $ chmod 755 iftest.sh
- 
 $ ./iftest.sh 
-##OUTPUT
+## OUTPUT
+![Screenshot 2024-08-26 170408](https://github.com/user-attachments/assets/332af5c6-1f6f-461f-9701-34dc26ca7a4d)
 
-# check if a file
-cat > ifnested.sh 
-```bash
-\#!/bin/bash
-if [ -e $HOME ]
-then
-echo “$HOME The object exists, is it a file?”
-if [ -f $HOME ]
-then
-echo “Yes,$HOME it is a file!”
-else
-echo “No,$HOME it is not a file!”
-if [ -f $HOME/.bash_history ]
-then
-echo “But $HOME/.bash_history is a file!”
-fi
-fi
-else
-echo “Sorry, the object does not exist”
-fi
-^d
-```
-
-cat ifnested.sh 
-```bash
-\#!/bin/bash
-if [ -e $HOME ]
-then
-echo “$HOME The object exists, is it a file?”
-if [ -f $HOME ]
-then
-echo “Yes,$HOME it is a file!”
-else
-echo “No,$HOME it is not a file!”
-if [ -f $HOME/.bash_history ]
-then
-echo “But $HOME/.bash_history is a file!”
-fi
-fi
-else
-echo “Sorry, the object does not exist”
-fi
-```
-
-$ chmod 755 ifnested.sh
- 
-$ ./ifnested.sh 
-##OUTPUT
 
 # looking for a possible value using elif
 cat elifcheck.sh 
@@ -740,6 +684,7 @@ $ chmod 755 elifcheck.sh
  
 $ ./elifcheck.sh 
 ## OUTPUT
+![Screenshot 2024-08-26 170427](https://github.com/user-attachments/assets/bb2bb39c-ce98-46ee-839d-faf20af52564)
 
 
 # testing compound comparisons
@@ -756,6 +701,7 @@ fi
 $ chmod 755 ifcompound.sh
 $ ./ifcompound.sh 
 ## OUTPUT
+![Screenshot 2024-08-26 170440](https://github.com/user-attachments/assets/44fe25e3-b595-4185-9275-50dc8e909984)
 
 # using the case command
 cat >casecheck.sh 
@@ -775,7 +721,9 @@ esac
 $ chmod 755 casecheck.sh 
  
 $ ./casecheck.sh 
- 
+## OUTPUT
+ ![Screenshot 2024-08-26 170453](https://github.com/user-attachments/assets/1d33bd11-7f19-4d40-81fe-b641873e6cc4)
+
 cat > whiletest
 ```bash
 #!/bin/bash
@@ -790,7 +738,9 @@ done
 $ chmod 755 whiletest.sh
  
 $ ./whiletest.sh
- 
+## OUTPUT
+![Screenshot 2024-08-26 170528](https://github.com/user-attachments/assets/a20ba2be-4dd3-4507-8e73-1d7894076283)
+
  
 cat untiltest.sh 
 ```bash
@@ -803,7 +753,10 @@ var1=$[ $var1 - 25 ]
 done
 ``` 
 $ chmod 755 untiltest.sh
- 
+$ ./untiltest.sh
+## OUTPUT
+![Screenshot 2024-08-26 170548](https://github.com/user-attachments/assets/77ee6284-10a4-423f-b8e9-0bc3f344af6b)
+
  
  
 cat forin1.sh 
@@ -817,7 +770,10 @@ done
  ```
  
 $ chmod 755 forin1.sh
- 
+$ ./forin1.sh
+## OUTPUT
+![Screenshot 2024-08-26 170610](https://github.com/user-attachments/assets/098cae74-7956-4b0f-8b8b-081ae7e0ebac)
+
  
 cat forin2.sh 
 ```bash
@@ -827,10 +783,7 @@ for test in I don't know if this'll work
 do
 echo “word:$test”
 done
- ```
- 
-$ chmod 755 forin2.sh
- 
+ ``` 
 cat forin2.sh 
 ```bash
 \#!/bin/bash
@@ -843,7 +796,10 @@ done
 $ chmod 755 forin2.sh
  
 $ ./forin2.sh 
- 
+## OUTPUT
+
+ ![Screenshot 2024-08-26 170630](https://github.com/user-attachments/assets/bb42aef7-1a59-47bf-b60d-3a707b8fcbbf)
+
 cat forin3.sh 
 ```bash
 \#!/bin/bash
@@ -854,17 +810,9 @@ echo "word:$test"
 done
 ```
 $ ./forin3.sh 
- 
-cat forin1.sh 
-```bash
-#!/bin/bash
-# basic for command
-for test in Alabama Alaska Arizona Arkansas California Colorado
-do
-echo The next state is $test
-done
-```
-$ chmod 755 forin1.sh
+## OUTPUT
+![Screenshot 2024-08-26 170646](https://github.com/user-attachments/assets/b0b4f208-0fb7-4cde-bbe9-f940e8eaa2e5)
+
 
 ## OUTPUT
 cat forinfile.sh 
