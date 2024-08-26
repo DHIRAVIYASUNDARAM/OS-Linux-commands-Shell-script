@@ -814,7 +814,6 @@ $ ./forin3.sh
 ![Screenshot 2024-08-26 170646](https://github.com/user-attachments/assets/b0b4f208-0fb7-4cde-bbe9-f940e8eaa2e5)
 
 
-## OUTPUT
 cat forinfile.sh 
 ```bash
 #!/bin/bash
@@ -836,6 +835,7 @@ Bhadrachalam
 Khammam
 
 ## OUTPUT
+![Screenshot 2024-08-26 171740](https://github.com/user-attachments/assets/e22eabab-94b5-47cb-86d0-e8887ec00a04)
 
 
 cat forctype.sh 
@@ -850,6 +850,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype.sh 
 ## OUTPUT
+![Screenshot 2024-08-26 171850](https://github.com/user-attachments/assets/c9f26f2d-0c64-4099-93df-907a613d8a92)
 
 cat forctype1.sh 
 ```bash
@@ -863,6 +864,7 @@ done
 $ chmod 755 forctype.sh
 $ ./forctype1.sh 
 ## OUTPUT
+![Screenshot 2024-08-26 171903](https://github.com/user-attachments/assets/020fdc89-b84e-4548-910a-f113eec8fcdf)
 
 cat fornested1.sh 
 ```bash
@@ -881,6 +883,7 @@ $ chmod 755 fornested1.sh
  
 $ ./fornested1.sh 
  ## OUTPUT
+![Screenshot 2024-08-26 171925](https://github.com/user-attachments/assets/e5ffdcba-6349-43d4-8423-df4ca8ab3982)
 
  
 cat forbreak.sh 
@@ -897,32 +900,12 @@ echo "Iteration number: $var1"
 done
 echo "The for loop is completed“
 ```
-## OUTPUT
-
 $ chmod 755 forbreak.sh
  
 $ ./forbreak.sh 
- 
-cat forbreak.sh 
-```bash
-#!/bin/bash
-# breaking out of a for loop
-for var1 in 1 2 3 4 5
-do
-if [ $var1 -eq 3 ]
-then
-continue
-fi
-echo "Iteration number: $var1"
-done
-echo "The for loop is completed“
-```
-
- 
-$ chmod 755 forcontinue.sh
- 
-$ ./forcontinue.sh 
 ## OUTPUT
+![Screenshot 2024-08-26 171948](https://github.com/user-attachments/assets/0c030265-7e5a-44f4-82da-438235fd3ac6)
+ 
  
 cat exread.sh 
 ```bash
@@ -937,22 +920,9 @@ $ chmod 755 exread.sh
  
 $ ./exread.sh 
 ## OUTPUT
+![Screenshot 2024-08-26 172015](https://github.com/user-attachments/assets/ca843eba-6b90-41f1-b9c8-f98df1189e73)
 
 
- cat exread1.sh
-```bash
-#!/bin/bash
-# testing the read command
-read -p "Enter your name: " name
-echo "Hello $name, welcome to my program. “
-``` 
-$ chmod 755 exread1.sh 
-
-## OUTPUT
-
-
-
-$ ./exread1.sh 
  
 cat funcex.sh
 ```bash
@@ -971,9 +941,11 @@ fi
 ```
 ## OUTPUT
  ./funcex.sh 
+![Screenshot 2024-08-26 172951](https://github.com/user-attachments/assets/338963c7-2f22-40cd-8c09-34e9475d99bc)
 
  
  ./funcex.sh 1 2
+![Screenshot 2024-08-26 172958](https://github.com/user-attachments/assets/335a5e12-8b42-45a6-b6d1-7974430f600b)
 
  
 cat argshift.sh
@@ -985,10 +957,10 @@ cat argshift.sh
 done
 ```
 $ chmod 777 argshift.sh
-
-## OUTPUT
 $ ./argshift.sh 1 2 3
- 
+## OUUTPUT
+![Screenshot 2024-08-26 173024](https://github.com/user-attachments/assets/9ee4052d-96fa-46f0-bfcc-6f94742d5e77)
+
  cat argshift1.sh
 ```bash
  #/bin/bash 
@@ -1003,21 +975,10 @@ for (( i=0;i<$ELEMENTS;i++)); do
 done
 ```
 $ chmod 777 argshift.sh
-## OUTPUT
-$ ./argshift.sh 1 2 3
+$ ./argshift1.sh 1 2 3
  
-cat argshift.sh
-```bash
-#!/bin/bash 
-set -x 
-while (( "$#" )); do 
-  echo $1 
-  shift 
-done
-set +x
-```
 ## OUTPUT
- ./argshift.sh 1 2 3
+![Screenshot 2024-08-26 173438](https://github.com/user-attachments/assets/739a89cd-1dde-4a7a-9be2-3b840e90d196)
  
  
 cat > nc.awk
